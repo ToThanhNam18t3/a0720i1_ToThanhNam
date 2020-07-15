@@ -1,0 +1,267 @@
+.profile_picture{
+    width: 15px;
+    height: 189px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #585c68;
+    font-size: 14px;
+    line-height: 22px;
+    color: #555555;
+}
+
+.bold{
+    font-weight: 700;
+    font-size: 19px;
+    text-transform: uppercase; 
+    color: var(--white-color);  
+}
+
+.resume .resume_name{
+    font-weight: 700;
+    font-size: 19px;
+    text-transform: uppercase; 
+    color: var(--white-color);
+}
+
+.data{
+    color: var(--white-color);
+    font-weight: 700;
+}
+
+
+.semi_bold{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.job{
+    color: var(--white-color);
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.resume{
+    width: 800px;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+}
+
+
+.resume .resume_left{
+    width: 280px;
+    background-color: #0bb5f4;
+} 
+
+.resume .resume_left .resume_profile{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_picture{
+    width: 50%;
+    height: 80%;
+    border: black solid 2px;
+}
+
+.resume .resume_left .resume_content{
+    padding: 0 25px;
+}
+
+.resume_content{
+    padding: 10px 25px;
+}
+
+.resume .title .bold{
+    margin-bottom: 20px;
+}
+
+/* BAR */
+.resume .resume_item{
+    padding: 25px 0;
+    border-bottom: 2px solid var(--white-color);
+}
+
+.resume .resume_left .bold{
+    color: #fff;
+}
+
+
+.resume .resume_left ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
+.resume .resume_left ul li .icon{
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    color: #0bb5f4;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 16px;
+    position: relative;
+}
+
+.resume .icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.resume .resume_left .resume_skills ul li {
+    display: flex;
+    margin-bottom: 10px;
+    color: var(--white-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill_name{
+    width: 15%;
+}
+
+.skill_progress{
+    width: 60%;
+    margin: 0 5px;
+    height: 7px;
+    background: #009fd9;
+    position: relative;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #fff;
+}
+
+.resume_right{
+    background-color: var(--white-color);
+    width: 520px;
+    display: flex;
+}
+
+
+
+/* RIGHT */
+.borderbox{
+    width: 450px;
+    height: 1050px;
+    border: 1px solid black;
+    margin: 25px 40px;
+    padding: 15px;
+}
+
+.resume_item-title{
+    font-weight: 700;
+    font-size: 19px;
+    text-transform: uppercase; 
+    color: #0bb5f4;
+    margin-bottom: 15px;
+}
+
+.resume_right .borderbox .resume_learn ul li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume_right .borderbox .resume_experience ul li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume_right .borderbox .resume_certificate ul li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume_link-facebookicon{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.resume_link-description{
+    font-size: 15px;
+}
+
+.resume_link-githubicon{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    color: #0bb5f4;
+}
+
+.resume_link-instagramicon{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+/* STAR CSS */
+
+div.stars {
+    width: 270px;
+    display: inline-block;
+  }
+   
+input.star { display: none; }
+   
+label.star {
+    float: right;
+    padding: 10px;
+    font-size: 36px;
+    color: #444;
+    transition: all .2s;
+}
+   
+input.star:checked ~ label.star:before {
+    content: '\f005';
+    color: #FD4;
+    transition: all .25s;
+  }
+   
+input.star-5:checked ~ label.star:before {
+    color: #FE7;
+    text-shadow: 0 0 20px #952;
+  }
+   
+input.star-1:checked ~ label.star:before { color: #F62; }
+   
+label.star:hover { transform: rotate(-15deg) scale(1.3); }
+   
+label.star:before {
+    content: '\f006';
+    font-family: FontAwesome;
+  }
+
+
+
+
+
+
+
+
+
+

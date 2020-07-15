@@ -1,0 +1,9 @@
+:root{
+   --white-color: #fff;
+}
+
+.text{
+    font-size: 300;
+    color: var(--white-color);
+    line-height: 1.5;
+}
