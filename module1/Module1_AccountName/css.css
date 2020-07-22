@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.thread{
+    background-image: url(./assests/bn1.jpg);
+    background-size: cover;
+    
+}
+
+.header{
+    border-bottom: 3px solid #cccccc;  
+}
+
+
+.header__above {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+.header__above a {
+    text-decoration: none;
+    color: inherit;
+    height: max-content;
+}
+  
+.header__above  .brand {
+    font-size: 4em;
+    margin-top: 30px;
+    color: white;
+    font-family: 'Sedgwick Ave', cursive;
+}
+  
+.header__above > .btn-spec {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: max-content;
+    padding-right: 0;
+    padding-left: 0;
+    margin: 28px 94px 83px 100px; 
+}
+
+.header__above > .unl {
+    border-bottom: 1px solid white;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: large;
+    margin: 28px 94px 83px 100px; 
+    cursor: pointer;
+}
+
+  
+.header__below > .navigation {
+    width: 70%;
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: #cccccc;
+    padding-bottom: 20px;
+    cursor: pointer;
+} 
+
+.header{
+    background-color: transparent;
+}
+
+.link{
+    font-weight:550;
+    font-weight: 600;
+}
+
+.header__below .navigation .link:hover{
+    color: white;
+}
+
+/* MAIN */
+
+.main{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    width: 900px;
+    height: 533px;
+    margin: 50px 50px;
+    display: flex;
+}
+
+.form .left{
+    width: 597px;
+    height: 533px;
+}
+
+.left__top-image .topimage{
+    width: 597px;
+    height: 393px;
+    border-radius: 10px;
+}
+
+.left__bottom .left__bottom-image .bottomimage{
+    width: 156px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 5px solid white;
+}
+
+.left__bottom-content{
+    color: rgb(123, 109, 109);
+    margin-top: 23px;
+    margin-left: 15px;
+}
+
+.left__bottom{
+    display: flex;
+    background-color:#F6FAFD;
+    width:597px;
+    height: 135px;
+    border-radius: 10px;
+}
+
+.right{
+    width: 302px;
+    height: 532px;
+    background-color: rgb(54,111,130);
+    border: 2px solid aqua;
+    border-radius: 10px;
+}
+
+.right input{
+    margin-left: 40px;
+}
+
+.right p{
+    color: white;
+    margin-left: 40px;
+}
+
+.right select{
+    margin-left: 40px;
+    width: 151px;
+}
+
+.right_header{
+    color: white;
+    margin-bottom: 30px;
+}
+
+.right_header h3{
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    opacity: 0.4;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
