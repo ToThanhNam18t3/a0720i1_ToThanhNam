@@ -131,9 +131,9 @@
 .right{
     width: 302px;
     height: 532px;
-    background-color: rgb(54,111,130);
-    border: 2px solid aqua;
+    background-color: rgba(54, 111, 130);
     border-radius: 10px;
+    
 }
 
 .right input{
@@ -166,12 +166,25 @@ footer{
     height: 70px;
     background-color: white;
     opacity: 0.4;
-}
-
-.footer{
     display: flex;
     justify-content: space-between;
 }
+
+.footer__content{
+    width: 100%;
+}
+
+.text2{
+    float: right;
+}
+
+
+
+
+
+
+
+
 
 
 
