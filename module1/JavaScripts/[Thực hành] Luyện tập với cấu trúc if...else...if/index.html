@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice with If...else...IF</title>
+
+    <!-- 
+        Nếu tên nhập vào là Admin thì yêu cầu nhập mật khẩu.
+        Nếu mật khẩu là TheMaster thì in ra chuỗi Welcome.
+        Nếu mật khẩu nhập vào là null in ra chuỗi Canceled.
+        Còn lại in ra chuỗi Wrong password. 
+        Nếu tên nhập vào là null in ra chuỗi canceld.
+        Còn lại in ra chuỗi “I don’t know you"
+    -->
+</head>
+<body>
+    <script>
+        let  name = prompt("Nhập vào tên : ");
+        let  pass;
+
+        if (name == "Admin"){
+            pass = prompt("Input PassWord: ");
+            if (pass == 'TheMaster'){
+                document.write("WelCome");
+            } else if (pass == null) {
+                document.write("Canceled");
+            } else {
+                document.write("Wrong Password!");
+            }
+        } else if (name = null) {
+            alert("Canceled");
+        } else {
+            alert("I dont know you");
+        }
+
+        let
+
+        
+
+    </script>
+</body>
+</html>
