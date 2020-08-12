@@ -1,7 +1,7 @@
 
 
 function answer() {
-    alert("Love you , too baby <3 ");
+    alert("Mình cũng yêu bạn nghe bạn Duyên <3 ^^, giỏi thì ấn No coi ? ");
 }
 
 function movebtn() {
