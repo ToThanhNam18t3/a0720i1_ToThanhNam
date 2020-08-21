@@ -1,28 +1,20 @@
-function kiem_tra_snt(n)
-{
-    // Biến cờ hiệu
-    var flag = true;
- 
-    // Nếu n bé hơn 2 tức là không phải số nguyên tố
-    if (n < 2){
-        flag = false;
-    }
-    else{
-        // lặp từ 2 tới n-1
-        for (var i = 2; i < n-1; i++)
-        {
-            if (n % i == 0){
-                flag = false;
-                break;
-            }
+
+num = parseInt(prompt('Input N nummber which you want to check : '));
+console.log(num);
+
+if(num < 2) {
+    document.write("Number " + num + " isn't prime number");
+} else {
+    let mark = 1;
+    for ( let i = 2; i <= Math.sqrt(num); i++) {
+        if(num % i == 0) {
+            mark = 0;
+            break;
         }
     }
- 
-    // Kiểm tra biến flag
-    if (flag == true){
-        document.write(n + " là số nguyên tố <br/>");
-    }
-    else{
-        document.write(n + " không phải là số nguyên tố <br/>");
+    if (mark == 1) {
+        document.write('This is prime number!!!' + num);
+    } else {
+        document.write('This is not prime number !!! ' + num);
     }
 }

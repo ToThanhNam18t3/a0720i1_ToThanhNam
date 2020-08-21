@@ -1,0 +1,12 @@
+body{
+    width: 100%;
+}
+
+.newProduct{
+    width: 470px;
+    height: 100px;
+    background-color: #F2F2F2;
+    justify-content: center;
+    text-align: center;
+}
+

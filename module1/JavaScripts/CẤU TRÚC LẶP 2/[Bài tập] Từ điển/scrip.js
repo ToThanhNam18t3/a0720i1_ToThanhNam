@@ -1,8 +1,41 @@
-viet = ['Cái bàn', 'Cái ghế', 'Chiếc Xe'];
-eng = ['Table', 'Desk', 'Car'];
+// let btn = document.getElementById('btn');
+// let printed = document.getElementById('print');
+// let input = document.getElementById('input');
 
-let value = prompt('Nhập vào từ điểm cần tìm !')
 
-for (let i = 0; i < viet.length; i++) {
-    if ()
-}
+//  let Viet = ['Xe hơi', 'Ngôi nhà', 'Cái ghế', 'Con chó'];
+//  let Eng = ['Car', 'House', 'Chair', 'Dog'];
+
+//  btn.addEventListener('click', function(event){
+//      printed.innerHTML = "";
+//      keywork = input.value;
+//      index = Viet.indexOf(keywork);
+//      if(index >=0) {
+//          printed.innerHTML = Eng[index];
+//      } else{
+//          printed.innerHTML = 'not Found';
+//      }
+//  })
+
+
+
+ 
+
+
+let btn = document.getElementById('btn');
+let input = document.getElementById('input');
+let printed = document.getElementById('print');
+
+let Viet = ['a', 'b', 'c', 'd'];
+let Eng = ['ay', 'bi', 'si', 'di'];
+
+btn.addEventListener('click', function(event){
+    printed.innerHTML ='';
+     keywork = input.value;
+     index = Viet.indexOf(keywork);
+    if(index >= 0) {
+        printed.innerHTML = Eng[index];
+    } else {
+        printed.innerHTML ='not found';
+    }
+})
