@@ -74,8 +74,8 @@ class Cat {
 }
 
 
-let myMouse = new Rat("Tom",25,10,false);
-let myCat = new Cat("Jerry",15,20);
+let myMouse = new Rat("Tom",25,20,false);
+let myCat = new Cat("Jerry",15,15);
 
 myCat.catSay();
 myMouse.ratSay();

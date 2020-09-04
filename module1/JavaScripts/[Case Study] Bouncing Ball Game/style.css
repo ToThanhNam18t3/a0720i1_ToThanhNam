@@ -1,0 +1,9 @@
+body{
+    margin: 0;
+}
+
+canvas {
+     background-image: url(anh.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+}

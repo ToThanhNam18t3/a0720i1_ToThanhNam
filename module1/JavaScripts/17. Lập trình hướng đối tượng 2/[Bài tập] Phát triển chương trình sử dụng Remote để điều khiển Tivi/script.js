@@ -33,22 +33,23 @@ class Remote {
     turnOnTivi(Tivi) {
         if (Tivi.status) {
             alert('Đã bật Tivi');
-        } else {
-            alert('Đã tắt Tivi');
+        }
+    }
+    turnOffTivi(Tivi) {
+        if(Tivi.status == false) {
+            alert('Đã tắt Tivi!');
         }
     }
     changeChannel(Tivi) {
         if (Tivi.status) {
-            let temp = prompt(parseInt('Nhập kênh bạn muốn thay đổi : '));
+            let temp = parseInt(prompt("Nhập kênh bạn muốn thay đổi : "));
             Tivi.getChanel = temp;
             alert("Kênh đã được thay đổi thành kênh " + temp);
-        } else {
-            alert('Tivi đang tắt !');
         }
     }
     changeVolume(Tivi) {
         if (Tivi.status) {
-            let temp1 = prompt(parseInt("Nhập âm lượng muốn thay đổi : "));
+            let temp1 = parseInt(prompt("Nhập volume bạn muốn thay đổi : "));
             Tivi.getVolume = temp1;
             alert("Volume đã được thay đổi thành : " + temp1);
         } else {
@@ -57,12 +58,16 @@ class Remote {
     }
 }
 
-let myTv = new Tivi(3,2,true);
+let myTv = new Tivi(3, 2, true);
 let myRemote = new Remote(10);
 
+
+myRemote.turnOnTivi(myTv);
 alert("Channel hiện tại của Tivi là : " + myTv.getChanel());
 myRemote.changeChannel(myTv);
 myRemote.changeVolume(myTv);
+
+
 
 
 
