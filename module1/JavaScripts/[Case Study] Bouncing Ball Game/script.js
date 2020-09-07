@@ -63,7 +63,7 @@ function draw() {
             dy = -dy;
         }
         else {
-            alert("CHƠI GÀ QUÁ, THUA MẸ RỒI!");
+            alert("Bạn đã thua trong trò chơi này ! Cố gắng lần sau nhé");
             document.location.reload();
             clearInterval(interval); // Hàm dừng trò chơi trên trình duyệt.
         }
