@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div.form-student, div.list-student{
+    width: 700px;
+    border: 1px solid #ccc;
+    margin: 25px;
+    padding:  10px;
+    float: left;
+}
+
+div.list-student{
+    width: 650px;
+}
+
+div.form-student h3{
+    padding:  0px;
+    margin-top: 0px;
+}
+
+div.form-student label{
+    width: 150px;
+    float: left;
+}
+
+div.form-student input[type="text"], button{
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 5px;
+}
+
+button{
+    margin-top: 15px;
+}
+
+.title{
+    margin-bottom: 30px;
+}
+
+.error{
+    color: red;
+}
+ 

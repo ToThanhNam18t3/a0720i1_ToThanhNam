@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="css.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="js.js">
+  <link rel="stylesheet" href="css1.css">
+  <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
 </head>
 
 <body>
@@ -24,7 +25,16 @@
         <ul class="navigation">
           <li class="link">HOME</li>
           <li class="link">ROOM & RATES</li>
-          <li class="link">DINING</li>
+          <div class="dropdown">
+            <li class="link customer" onclick="window.location.href='./Customer/Module1_AccountName.html'">CUSTOMER
+              <div class="customer_menu">
+                  <a href="" class="customer_add">Add New Account <br> </a>
+                  <a href="" class="customer_add">Edit Guest Account <br></a>
+                  <a href="" class="customer_add">Delete Guest Account <br></a>
+                  <a href="" class="customer_add">Display Guest Account<br> </a>
+              </div>
+            </li>
+          </div>
           <li class="link">SPA</li>
           <li class="link">EVENT</li>
           <li class="link">TOURS</li>
@@ -43,68 +53,40 @@
           </div>
           <div class="left__bottom">
             <div class="left__bottom-image">
-              <img src="/assests/food.jpg" alt="food" class="bottomimage">
+              <img src="./assests/food.jpg" alt="food" class="bottomimage">
             </div>
             <div class="left__bottom-content">
               <h3>SeaFood week in our Cosy restaurant & buffe</h3>
               <p>SeaFood week in our Cosy restaurant & buffe you can eat everything
-                with KHÁ BẢNH , Huấn rô sì ....
+                with anyone , anything...etc and a lot of thing wating you in FURAMA
               </p>
             </div>
           </div>
         </div>
 
         <div class="right">
-          <form action="" class="">
-            <div class="right_header">
-              <h3>FIDING A ROOM</h3>
-            </div>
-            <p>HỌ VÀ TÊN</p>
-            <input type="text" class="text">
-            <p>SỐ CMND</p>
-            <input type="number" class="text">
-            <p>NGÀY THÁNG NĂM SINH</p>
-            <input type="date" class="text">
-            <p>EMAIL</p>
-            <input type="email" class="text">
-            <p>ĐỊA CHỈ</p>
-            <input type="text" class="text">
-            <p>LOẠI CUSTOMER</p>
-            <select name="customer" id="" class="">
-              <option value="customer" class="">Diamon</option>
-              <option value="customer" class="">Platium</option>
-              <option value="customer" class="">Gold</option>
-              <option value="customer" class="">Silvel</option>
-              <option value="customer" class="">Member</option>
-            </select>
-            <p>GIẢM GIÁ</p>
-            <input type="text" class="text">
-            <p>SỐ LƯỢNG ĐI KÈM</p>
-            <input type="number" class="text">
-            <p>SỐ NGÀY THUÊ</p>
-            <input type="text" class="text">
-            <p>LOẠI DỊCH VỤ</p>
-            <select name="service" id="" class="">
-              <option value="service" class="">Villa</option>
-              <option value="service" class="">House</option>
-              <option value="service" class="">Room</option>
-            </select>
-            <p>Loại phòng thuê</p>
-            <select name="room" id="" class="">
-              <option value="VIP" class="">VIP</option>
-              <option value="BUSINESS" class="">BUSINESS</option>
-              <option value="normal" class="">NORMAL</option>
-            </select>
-
-            <button type="submit" onclick="xuly()">Nộp</button>
-          </form>
+          
         </div>
       </div>
     </div>
 
     <footer class="footer">
       <div class="footer__content">
-        <span class="text1">Overview</span>
+        <!--STAR RATING -->
+        <div class="stars">
+          <form action="">
+            <input class="star star-5" id="star-5" type="radio" name="star"/>
+            <label class="star star-5" for="star-5"></label>
+            <input class="star star-4" id="star-4" type="radio" name="star"/>
+            <label class="star star-4" for="star-4"></label>
+            <input class="star star-3" id="star-3" type="radio" name="star"/>
+            <label class="star star-3" for="star-3"></label>
+            <input class="star star-2" id="star-2" type="radio" name="star"/>
+            <label class="star star-2" for="star-2"></label>
+            <input class="star star-1" id="star-1" type="radio" name="star"/>
+            <label class="star star-1" for="star-1"></label>
+          </form>
+        </div>
         <span class="text2">DaNangAtraction</span>
       </div>
     </footer>
