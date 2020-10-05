@@ -1,4 +1,4 @@
-package Bai3_Array;
+package Bai3_Array.Bai_tap.B2_Tim_Gia_Trị_Lon_Nhat_Cua_Mang;
 
 import java.util.Scanner;
 

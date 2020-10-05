@@ -6,8 +6,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-si
-    tyle: none;
+    box-sizing: none;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -176,6 +175,7 @@ body{
     text-transform: uppercase; 
     color: #0bb5f4;
     margin-bottom: 15px;
+    list-style: none;
 }
 
 .resume_right .borderbox .resume_learn ul li{
@@ -202,6 +202,7 @@ body{
 
 .resume_link-description{
     font-size: 15px;
+    color: #009fd9;
 }
 
 .resume_link-githubicon{
