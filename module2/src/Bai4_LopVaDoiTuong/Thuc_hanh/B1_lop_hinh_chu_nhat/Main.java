@@ -14,5 +14,6 @@ public class Main {
 
         Rectangle myRecTangle = new Rectangle(width,height);
         System.out.println("Your Rectangle \n" + myRecTangle.display());
+        System.out.println("abc: " + myRecTangle.getArea());
     }
 }
