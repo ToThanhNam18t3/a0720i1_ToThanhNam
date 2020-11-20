@@ -2,6 +2,7 @@ package Bai5_Access_modifier_static_method_static_property.Bai_tap.B1_Acces_Modi
 
 public class Circle {
     private double radius;
+    private String color;
 
     public Circle(double radius) {
         this.radius = radius;
