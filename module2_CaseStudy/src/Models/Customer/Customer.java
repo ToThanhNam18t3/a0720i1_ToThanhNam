@@ -13,9 +13,7 @@ public class Customer implements Comparable<Customer> {
     private String address;
     private Service useService;
 
-    public static int dem = 0;
     public Customer(){
-        dem++;
     }
 
     public Customer(String nameOfCustomer, String dateOfBirth, String gender, String idCard, String phoneNumber, String email, String typeOfCustomer, String address, Service useService) {

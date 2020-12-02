@@ -17,6 +17,8 @@ public class Room extends Services {
         this.freeService = freeService;
     }
 
+
+
     public String getFreeService() {
         return freeService;
     }

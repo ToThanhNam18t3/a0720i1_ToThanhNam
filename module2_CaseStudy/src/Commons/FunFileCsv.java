@@ -8,6 +8,8 @@ import Models.Services.Services;
 import Models.Services.Villa;
 
 import java.io.*;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -21,30 +23,26 @@ public class FunFileCsv {
     private static final String FILENAMEHOUSE = "src/Data/House.csv";
     private static final String FILENAMECUSTOMER = "src/Data/Customer.csv";
     private static final String FILENAMEEMPLOYEE = "src/Data/Employee.csv";
-    //header file CSV Student; q
     private static final String FORM_HORIZONTALLY = "-------------------\n";
-    //String id, String nameOfService, double areaUsed, int price, int maxOfPeople, String rentType
     private static final String FILE_HEADER_VILLA = "ID,NameOfService,AreaUsed,Price,MaxOfPeople,RentType,TypeOfRoom,OtherConvenient,PoolArea,floor";
-    //String typeOfRoom, String otherConvenient, int floor
     private static final String FILE_HEADER_HOUSE = "ID,NameOfService,AreaUsed,Price,MaxOfPeople,RentType,TypeOfRoom,OtherConvenient,Floor";
-    //freeService
     private static final String FILE_HEADER_ROOM = "ID,NameOfService,AreaUsed,Price,MaxOfPeople,RentType,FreeService";
     //String nameOfCustomer, String dateOfBirth, String gender, String idCard,
     // String phoneNumber, String email, String typeOfCustomer, String address, Service useService
     private static final String FILE_HEADER_CUSTOMER = "NameOfCustomer,DateOfBirth,Gender,IdCard,PhoneNumber,Email,TypeOfCustomer,Address,UserService";
-    private static final String FILE_HEADER_EMPLOYEE = "ID,Name,Age,Address";
+    private static final String FILE_HEADER_EMPLOYEE = "Name,Age,Address";
 
-    public static void writeEmployeeToCsv(List<Employee> employeeList){
+    public static void writeEmployeeToCsv(List<Employee> employeeList) {
         File file = new File(FILENAMEEMPLOYEE);
         FileWriter fileWriter;
         BufferedWriter bufferedWriter = null;
-        try{
+        try {
             fileWriter = new FileWriter(file);
             bufferedWriter = new BufferedWriter(fileWriter);
             bufferedWriter.append(FILE_HEADER_EMPLOYEE);
             bufferedWriter.append(NEW_LINE_SEPARATOR);
 
-            for (Employee temp : employeeList){
+            for (Employee temp : employeeList) {
                 bufferedWriter.append(temp.toString());
                 bufferedWriter.append(NEW_LINE_SEPARATOR);
             }
@@ -53,35 +51,44 @@ public class FunFileCsv {
         }
     }
 
-    public static Map<String,Employee> readEmployee(){
-        Map<String,Employee> employeeMap = new LinkedHashMap<>();
+    public static Map<String, Employee> readEmployee() {
+
+        FileReader fileReader;
+        BufferedReader bufferedReader = null;
+        Map<String, Employee> employeeMap = new LinkedHashMap<>();
         File file = new File(FILENAMEEMPLOYEE);
 
-        try{
-            FileReader fileReader = new FileReader(file);
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
-
+        try {
+            fileReader = new FileReader(file);
+            bufferedReader = new BufferedReader(fileReader);
             String line;
 
-            while ((line = bufferedReader.readLine()) != null){
+            while ((line = bufferedReader.readLine()) != null) {
                 String[] splitData = line.split(",");
-                if(splitData[0].equals("Name")){
+                if (splitData[0].equals("Name")) {
                     continue;
                 }
                 Employee employee = new Employee();
                 employee.setName(splitData[0]);
                 employee.setAddress(splitData[1]);
                 employee.setAge(splitData[2]);
+
+                String id = String.format("%d", employeeMap.size() + 1);
+                employeeMap.put(id, employee);
             }
-        } catch (FileNotFoundException e) {
-            System.out.println("Error when find File CSV!");
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (Exception e){
-            System.out.println("Error when read file CSV!");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        } finally {
+            try {
+                bufferedReader.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
-        return employeeList;
+            return employeeMap;
     }
+
+
 
 //    public static void readEmployeeToCSV()
 
@@ -118,19 +125,19 @@ public class FunFileCsv {
         }
     }
 
-    public static List<Customer> readCustomerToCSV(){
+    public static List<Customer> readCustomerToCSV() {
         List<Customer> customerList = new ArrayList<>();
         File file = new File(FILENAMECUSTOMER);
 
-        try{
+        try {
             FileReader fileReader = new FileReader(file);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
 
             String line;
 
-            while ((line = bufferedReader.readLine()) != null){
+            while ((line = bufferedReader.readLine()) != null) {
                 String[] splitData = line.split(",");
-                if(splitData[0].equals("NameOfCustomer")){
+                if (splitData[0].equals("NameOfCustomer")) {
                     continue;
                 }
                 Customer customer = new Customer();
@@ -147,11 +154,11 @@ public class FunFileCsv {
                 // Bi thieu so 9
             }
         } catch (FileNotFoundException e) {
-            System.out.println("Erro when find File CSV!");
+//            System.out.println("Error when find File CSV!");
         } catch (IOException e) {
             e.printStackTrace();
-        } catch (Exception e){
-            System.out.println("Erro when read file CSV!");
+        } catch (Exception e) {
+//            System.out.println("Error when read file CSV!");
         }
         return customerList;
     }
@@ -232,7 +239,6 @@ public class FunFileCsv {
                         villa.setTypeOfRoom(splitData[6]);
                         villa.setOtherConvenient(splitData[7]);
                         villa.setPoolArea(Double.parseDouble(splitData[8]));
-                        System.out.println(splitData[9]);
                         villa.setFloor(Integer.parseInt(splitData[9]));
                         list.add(villa);
                         break;
@@ -248,10 +254,10 @@ public class FunFileCsv {
                         house.setRentType(splitData[5]);
                         house.setTypeOfRoom(splitData[6]);
                         house.setOtherConvenient(splitData[7]);
-                        System.out.println(splitData[8]);
                         house.setFloor(Integer.parseInt(splitData[8]));
                         list.add(house);
                         break;
+
                     case "Room":
                         Room room = new Room();
                         room.setId(splitData[0]);
@@ -266,12 +272,13 @@ public class FunFileCsv {
                 }
             }
         } catch (Exception e) {
-            System.out.println("Error When Read File CSV");
+//            System.out.println("Error When Read File CSV");
         } finally {
             try {
                 brReader.close();
             } catch (Exception e) {
-                System.out.println("Error In Close BufferedReader");
+//                System.out.println("Error In Close BufferedReader");
+                System.out.println("");
             }
         }
         return list;

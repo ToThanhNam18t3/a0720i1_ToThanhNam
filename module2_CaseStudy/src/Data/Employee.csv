@@ -1,0 +1,51 @@
+Nguyễn Văn A , 18
+
+
+//package case_study.controllers;
+
+  import case_study.commons.FileUtils;
+  import case_study.models.Employee;
+
+  import java.util.List;
+  import java.util.Map;
+  import java.util.Set;
+  import java.util.TreeMap;
+
+  public class ShowEmployee {
+      private static Integer Id =0;
+      public static void showInformationOfEmployee(){
+          Map<String, Employee> employeeMap = new TreeMap<>();
+          List<String[]> listEmployee = FileUtils.readFile("src/case_study/data/Employee.csv");
+          System.out.println("--------EMPLOYEE--------");
+              for (String[] c: listEmployee){
+                  Id++;
+                  Employee employee = new Employee(c[0],c[1],c[2]);
+                  employeeMap.put(String.format("%03d", Id),employee);
+              }
+          Set<String> set = employeeMap.keySet();
+          for (String p:set){
+              System.out.println(p+ ":"+employeeMap.get(p));
+          }
+          System.out.println("*****************************");
+      }
+  }
+
+  //   KH-XXXX
+  public static final String REGEX_CUSTOMER_ID = "^KH-[\\d]{4}$";
+  //   DV-XXXX
+  public static final String REGEX_SERVICE_ID = "^DV-[\\d]{4}$";
+  //   Tên
+  public static final String REGEX_NAME = "^[A-Z][a-z]+(\\s[A-Z][a-z]+)*$";
+  //   Số điện thoại
+  //   090xxxxxxx hoặc 091xxxxxxx hoặc (84)+90xxxxxxx hoặc (84)+91xxxxxxx
+  public static final String REGEX_PHONE = "^(090|091|\\(84\\)\\+90|\\(84\\)\\+91)[\\d]{7}$";
+  //   public static final String REGEX_PHONE = "^(090|091|[(]84[)][+]90|[(]84[)][+]91)[\\d]{7}$";
+  //   CMND 9 số và 12 số
+  public static final String REGEX_ID_NUMBER = "^([\\d]{9}|[\\d]{12})$";
+  //   Email
+  //   public static final String REGEX_EMAIL = "^[\\w.]+@[\\w&&[^_]]+([.][\\w&&[^_]]+){1,2}$";
+  public static final String REGEX_EMAIL = "^[\\w.]+@[a-zA-Z0-9]+(\\.[a-zA-Z0-9]+){1,2}$";
+  //   số dương
+  public static final String REGEX_POSITIVE_NUMBER = "^([1-9][\\d]*(\\.[\\d]*)?)|(0\\.[\\d]+)$";
+  //   số nguyên dương
+  public static final String REGEX_POSITIVE_INTEGER = "^[1-9][\\d]*$";
