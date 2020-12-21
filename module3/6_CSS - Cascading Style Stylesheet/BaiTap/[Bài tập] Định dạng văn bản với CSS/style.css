@@ -1,0 +1,26 @@
+body{
+    width: 40%;
+    text-align: justify;
+}
+
+.text1{
+    text-indent: 3em;
+}
+
+.cyan{
+    color: #00FFFF;
+}
+
+.blue{
+    color: blue;
+    font-weight: 800;
+}
+
+.text2{
+    text-indent: 3em;
+}
+
+.text3{
+    text-indent: 3em;
+}
+

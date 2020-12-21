@@ -1,9 +1,11 @@
 package Bai7_Abstract_Interface.Bai_Tap._01_Trien_Khai_Resizeable_cho_hh;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class testShape {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         Shape[] myShape = new Shape[3];
 
         myShape[0] = new Circle(1.5);

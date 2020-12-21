@@ -147,6 +147,9 @@ public class CRUD {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        int a1 = 5;
+        double a2 = (float)a1;
+
         ArrayList<Product> listOfBook = new ArrayList<>();
         menuOfBook(listOfBook);
     }

@@ -1,0 +1,149 @@
+*{
+     margin: 0;
+     padding: 0;
+}
+
+
+
+
+.wrap{
+     width: 100%;
+     background-color: #f0f2f5;
+     font-family: 'Roboto', sans-serif;
+     display: flex;
+}
+
+.left{
+     width: 30%;
+     height: 718px;
+     background-color: #f0f2f5;
+}
+
+.left2{
+     width: 30%;
+     background-color: #f0f2f5;
+     display: flex;
+     flex-direction: column;
+     margin-top: 180px;
+}
+
+.facebook-logo{
+     height: 156px;
+     align-self: flex-start;
+     display: inline-flex;
+}
+
+.left__title{
+     font-weight: 500;
+     font-size: 25px;
+     float: right;
+     align-self: flex-start;
+}
+
+.right{
+     width: 40%;
+     background-color:  #f0f2f5;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center  ;
+}
+
+.right__form{
+     width: 395px;
+     height: 376px;
+     background-color: white;
+     border-radius: 7px;
+     text-align: center;
+     margin-left: 15px;
+     margin-bottom: 30px;
+}
+
+.right__form-infomation{
+     display: flex;
+     height: 50%;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 17px;
+}
+
+.inputinfo{
+     width: 362px;
+     height: 74px;
+     border : 1px solid #dddfe2;
+     border-radius: 7px;
+     margin-bottom: 14px;
+}
+
+.btn::placeholder{
+     color: red;
+     font-size: 17px;
+     text-indent: 13px;
+     color: #90949c;
+}
+
+.btn + .btn{
+     margin-bottom: 17px;
+}
+
+.right__form-button{
+     font-size: 20px;
+     font-weight: 650;
+     color: white;
+     background-color: #1877f2;
+     margin-bottom: 17px;
+}
+
+.right__form-button:hover{
+     background-color: #166fe5;
+     cursor: pointer;
+}
+
+.forgot{
+     color: #1877f2;
+     margin-bottom: 30px;
+     font-weight: 100;
+     font-size: 15px;
+     cursor: pointer;
+}
+
+.line{
+     display: block;
+     width: 362px;
+     margin-left: 15px;
+     border: 0.5px #90949c solid;
+     margin-bottom: 30px;
+}
+
+.right__form-create{
+     width: 177px;
+     height: 48px;
+     border-radius: 7px;
+     font-size: 17px;
+     font-weight: 650;
+     color: white;
+     background-color: #42b72a;
+     border: none;
+}
+
+.right__form-create:hover{
+     background-color: #36a420;
+     cursor: pointer;
+}
+
+.rignt__content{
+     width: 350px;
+     height: 15px;
+     position: relative;
+     left: 15px;
+}
+
+.footer{
+     width: 100%;
+     height: 165px;
+     background-color: white;
+}
+
+
+
