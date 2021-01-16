@@ -1,0 +1,8 @@
+1. The absolute uri: [http://java.sun.com/jsp/jstl/core] cannot be resolved in either web.xml or the jar files deployed with this application
+
+Lỗi này do sever không chạy song song XML và library của JSTL được 
+**** Fix : Tạo 1 folder lib trong file Web-Inf . add 2 cái lib của JSTL vào là xong 
+
+looixi index của git
+
+**** Fix : xóa file index.log đi

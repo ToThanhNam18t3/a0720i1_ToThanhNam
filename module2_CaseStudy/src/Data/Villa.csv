@@ -2,3 +2,4 @@ ID,NameOfService,AreaUsed,Price,MaxOfPeople,RentType,TypeOfRoom,OtherConvenient,
 SVVL-1234,Nam,31.0,15,15,Vip,Vippro,massage,31.0,4
 SVVL-7777,Phai,33.0,19000,18,Phai,Phaii,food,39.0,6
 SVVL-1234,Hann,31.0,31,15,Ga,Ga,massage,30.0,1
+SVVL-1234,Ha,31.0,1000,15,Diamond,Vip,massage,31.0,4
