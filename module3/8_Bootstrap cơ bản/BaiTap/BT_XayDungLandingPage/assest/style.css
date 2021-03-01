@@ -1,0 +1,12 @@
+.navbar--line::after{
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 2px solid black;
+    height: 35px;
+    left: 160px;
+}
+
+.nav__left{
+    
+}

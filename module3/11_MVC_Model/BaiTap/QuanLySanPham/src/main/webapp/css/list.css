@@ -1,0 +1,14 @@
+.name{
+    color: red;
+}
+
+.button_create{
+    margin: auto;
+}
+
+.header__create-btn{
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+

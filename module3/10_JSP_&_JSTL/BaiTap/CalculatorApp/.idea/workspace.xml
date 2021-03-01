@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5021920b-b1fe-4486-8fdc-2e23eb9038b6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../HienThiDSKhachHang/src/Controller/ShowCus_Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HienThiDSKhachHang/src/Model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HienThiDSKhachHang/web/jsp/showCus.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HienThiDSKhachHang/web/style/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ThucHanh/TuDienDonGian/src/Directory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../9_Tong_Quan_Ung_Dung_Web/ThucHanh/Chuyen_Doi_Tien_Te_Servlet/src/Change_Money_Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../9_Tong_Quan_Ung_Dung_Web/ThucHanh/Chuyen_Doi_Tien_Te_Servlet/web/jsp/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../9_Tong_Quan_Ung_Dung_Web/ThucHanh/Chuyen_Doi_Tien_Te_Servlet/web/jsp/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../9_Tong_Quan_Ung_Dung_Web/ThucHanh/Dang_Nhap_Va_Hien_Thi_Loi_Chao/src/Hello_Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../9_Tong_Quan_Ung_Dung_Web/ThucHanh/Dang_Nhap_Va_Hien_Thi_Loi_Chao/web/jsp/display.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../9_Tong_Quan_Ung_Dung_Web/ThucHanh/Dang_Nhap_Va_Hien_Thi_Loi_Chao/web/jsp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../9_Tong_Quan_Ung_Dung_Web/ThucHanh/Hien_Thi_Thoi_Gian_He_Thong/src/DisplayTime_Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../9_Tong_Quan_Ung_Dung_Web/ThucHanh/Tu_Dien_Don_Gian_Servlet/src/Directory_Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../9_Tong_Quan_Ung_Dung_Web/ThucHanh/Tu_Dien_Don_Gian_Servlet/web/jsp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module2_CaseStudy/src/Data/Villa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module2_CaseStudy/src/Data/Villa.csv" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1mSbMsdY6qnXpawDIAW9QKKwoxa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5021920b-b1fe-4486-8fdc-2e23eb9038b6" name="Default Changelist" comment="" />
+      <created>1609489898473</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609489898473</updated>
+      <workItem from="1609489899922" duration="167000" />
+      <workItem from="1609490131175" duration="114000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

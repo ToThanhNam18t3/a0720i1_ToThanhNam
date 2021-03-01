@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Cách 1 - hiển thiện sử dụng hàm Alert()-->
+    <button type ="button" onclick="showMessage();">Click me!</button>
+    <script>
+        function showMessage(){
+            alert('Xin chào!');
+        }
+    </script>
+    <!-- Cách 2 - hiển thiện sử dụng thẻ HTML<!-->
+        <button type ="button" onclick="showMessage();">Click me!</button>
+        <script>
+            function showMessage(){
+                document.write('Xin chào!');
+            }
+        </script>
+
+    <!-- Cách 3 - hiển thiện sử dụng hàm console.log()<!-->
+        <button type ="button" onclick="showMessage();">Click me!</button>
+        <script>
+            function showMessage(){
+                console.log('Xin chào!')
+            }
+        </script>
+</body>
+</html>

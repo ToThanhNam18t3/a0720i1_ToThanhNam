@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    font-family: 'Lemonada', cursive;
+    font-weight: 500;
+}
+
+.wrap{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient(to right , #a1c4fd,#c2e9fb);
+}
+
+.content{
+    margin-bottom: 70px;
+}
+
+
+#slection-number{
+    border: none;
+    height: 25px;
+    margin-bottom: 15px;
+}   
+
+#btn{
+    cursor: pointer;
+    height: 30px;
+}
+
+

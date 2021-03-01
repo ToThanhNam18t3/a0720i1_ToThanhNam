@@ -1,0 +1,22 @@
+.amount{
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.currency{
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.currencied{
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+

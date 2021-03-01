@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6238f03f-07ed-406f-a166-163ed1bb7dc3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ThucHanh/Chuyen_Doi_Tien_Te_Servlet/src/Change_Money_Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ThucHanh/Chuyen_Doi_Tien_Te_Servlet/web/jsp/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ThucHanh/Chuyen_Doi_Tien_Te_Servlet/web/jsp/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ThucHanh/Dang_Nhap_Va_Hien_Thi_Loi_Chao/src/Hello_Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ThucHanh/Dang_Nhap_Va_Hien_Thi_Loi_Chao/web/jsp/display.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ThucHanh/Dang_Nhap_Va_Hien_Thi_Loi_Chao/web/jsp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ThucHanh/Hien_Thi_Thoi_Gian_He_Thong/src/DisplayTime_Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ThucHanh/Tu_Dien_Don_Gian_Servlet/src/Directory_Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ThucHanh/Tu_Dien_Don_Gian_Servlet/web/jsp/home.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1mGxhstlYgnPmJshZo5HrqOwFvy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6238f03f-07ed-406f-a166-163ed1bb7dc3" name="Default Changelist" comment="" />
+      <created>1609133850282</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609133850282</updated>
+      <workItem from="1609133851996" duration="180000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1609134026936">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1609134026936" />
+    <state x="209" y="0" key="new project wizard" timestamp="1609134029643">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="209" y="0" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1609134029643" />
+  </component>
+</project>

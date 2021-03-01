@@ -1,0 +1,20 @@
+table{
+    width: 500px;
+    height: 168px;
+}
+
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
