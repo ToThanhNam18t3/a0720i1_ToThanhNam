@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f2ef2916-74b9-4dd7-a930-cb04b468f073" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../module3_CaseStudy/.idea/artifacts/module3_CaseStudy_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3_ViewsAndThymeLeaf/ThucHanh/UseThymeLeafToManageCustomer/.idea/modules/UseThymeLeafToManageCustomer.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4DataBinding&amp;Form/ThucHanh/loginApp/.idea/modules/loginApp.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4DataBinding&amp;Form/ThucHanh/loginApp/src/main/java/model/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_CSDL&amp;ORM/BaiTap/CreateDatabaseTest/.idea/modules/CreateDatabaseTest.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_CSDL&amp;ORM/BaiTap/CreateDatabaseTest/src/main/java/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_CSDL&amp;ORM/BaiTap/CreateDatabaseTest/src/main/java/ApplicationInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../8_Validation/BaiTap/LoginValidation/src/main/java/com/validation/loginvalidation/config/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../8_Validation/BaiTap/LoginValidation/src/main/resources/templates/result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../8_Validation/BaiTap/ValidateLoginForm/.idea/ValidateLoginForm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../96_Demo/DemoDataBiding/A07Demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/98_CorelNoteANDBaoCaoTuan/ThuVien/tomcat/webapps/ROOT/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/98_CorelNoteANDBaoCaoTuan/ThuVien/tomcat/webapps/ROOT/WEB-INF/classes/controller/TimeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/98_CorelNoteANDBaoCaoTuan/ThuVien/tomcat/webapps/ROOT/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/98_CorelNoteANDBaoCaoTuan/ThuVien/tomcat/webapps/ROOT/WEB-INF/views/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/98_CorelNoteANDBaoCaoTuan/ThuVien/tomcat/webapps/ROOT/WEB-INF/views/saveCondiment.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/98_CorelNoteANDBaoCaoTuan/ThuVien/tomcat/webapps/ROOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3_CaseStudy/.idea/artifacts/module3_CaseStudy_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3_CaseStudy/.idea/artifacts/module3_CaseStudy_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3_CaseStudy/module3_CaseStudy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3_CaseStudy/module3_CaseStudy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2SpringController/BaiTap/HienThiGiaViVoiSandWich/src/main/webapp/WEB-INF/views/saveCondiment.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4DataBinding&amp;Form/ThucHanh/LoginApps/.idea/LoginApps.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4DataBinding&amp;Form/ThucHanh/LoginApps/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4DataBinding&amp;Form/ThucHanh/LoginApps/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4DataBinding&amp;Form/ThucHanh/LoginApps/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4DataBinding&amp;Form/ThucHanh/LoginApps/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4DataBinding&amp;Form/ThucHanh/LoginApps/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1qQvryk7MzBFFpwS7jmkcOaPHAR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2ef2916-74b9-4dd7-a930-cb04b468f073" name="Default Changelist" comment="" />
+      <created>1617024830361</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617024830361</updated>
+      <workItem from="1617024837536" duration="489000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+</project>

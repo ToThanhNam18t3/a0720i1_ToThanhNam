@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab98d01e-9f92-4ce5-8cff-15b926943850" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/LoginApps.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../2SpringController/BaiTap/HienThiGiaViVoiSandWich" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -41,10 +46,21 @@
       <updated>1614602126353</updated>
       <workItem from="1614602129728" duration="210000" />
       <workItem from="1614603168757" duration="1260000" />
+      <workItem from="1614605718932" duration="557000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1614606276617">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1614606276617" />
+    <state x="209" y="28" key="new project wizard" timestamp="1614605816458">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="209" y="28" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1614605816458" />
   </component>
 </project>

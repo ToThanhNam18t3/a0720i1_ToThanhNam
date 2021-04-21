@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Input your infomation</h1>
+
+    <form th:action="@{/}" th:object="${User}" method="post">
+        <table>
+            <tr>
+                <td>ID</td>
+            </tr>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" th:field="*{firstName}"/></td>
+                <th th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}">Error Name</th>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" th:field="*{lastName}"/></td>
+                <th th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}">Error Name</th>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="text" th:field="*{phoneNumber}"/></td>
+                <td th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}">Error Name</td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input type="text" th:field="*{age}" value="a"/></td>
+                <th th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Error Name</th>
+            </tr>
+        </table>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
