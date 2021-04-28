@@ -15,4 +15,5 @@ public class HomeController {
     public ModelAndView homePage(){
         return new ModelAndView("html/home");
     }
+
 }

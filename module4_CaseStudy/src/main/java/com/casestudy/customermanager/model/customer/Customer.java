@@ -1,36 +1,49 @@
 package com.casestudy.customermanager.model.customer;
 
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import com.casestudy.customermanager.validation.customerValidation.CustomerIdCheck;
+import com.casestudy.customermanager.validation.customerValidation.IdCardCheck;
+import com.casestudy.customermanager.validation.customerValidation.NumberphoneCheck;
+import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
-@Getter @Setter @NoArgsConstructor
+@Data
 public class Customer {
 
-
     @Id
-    private String customertypeId;
+    @CustomerIdCheck(message = "")
+    private String customerId;
 
     private String customerName;
     private String customerDob;
+
+    @IdCardCheck
     private String customerIdCard;
+
+    @NumberphoneCheck(message ="")
     private String customerNumberPhone;
     private String customerEmail;
     private String customerAddress;
-    
 
-    public Customer(String customertypeId, String customerName, String customerDob, String customerIdCard, String customerNumberPhone, String customerEmail, String customerAddress) {
-        this.customertypeId = customertypeId;
-        this.customerName = customerName;
-        this.customerDob = customerDob;
-        this.customerIdCard = customerIdCard;
-        this.customerNumberPhone = customerNumberPhone;
-        this.customerEmail = customerEmail;
-        this.customerAddress = customerAddress;
-    }
+    @ManyToOne
+    @JoinColumn(name="customerTypeId" , nullable = false)
+    private CustomerType customerType;
+
+//    @Override
+//    public boolean supports(Class<?> clazz) {
+//        return false;
+//    }
+//
+//    @Override
+//    public void validate(Object target, Errors errors) {
+//        Customer customer = (Customer) target;
+//
+//        String customerId = customer.getCustomerName();
+//        ValidationUtils.rejectIfEmpty(errors, "customerId" , "customerId.empty");
+//        if(!customerId.matches("^KH-[0-9]{4}$")){
+//            errors.rejectValue("customerId","customerId.length");
+//        }
+//    }
 }

@@ -2,31 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="422f3e6c-97ce-4c09-aa5d-a2167f4f9b51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../../module3_CaseStudy/.idea/artifacts/module3_CaseStudy_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../3_ViewsAndThymeLeaf/ThucHanh/UseThymeLeafToManageCustomer/.idea/modules/UseThymeLeafToManageCustomer.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4DataBinding&amp;Form/ThucHanh/loginApp/.idea/modules/loginApp.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4DataBinding&amp;Form/ThucHanh/loginApp/src/main/java/model/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../5_CSDL&amp;ORM/BaiTap/CreateDatabaseTest/.idea/modules/CreateDatabaseTest.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../5_CSDL&amp;ORM/BaiTap/CreateDatabaseTest/src/main/java/ApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../5_CSDL&amp;ORM/BaiTap/CreateDatabaseTest/src/main/java/ApplicationInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BaiTap/LoginValidation/src/main/java/com/validation/loginvalidation/config/ApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BaiTap/LoginValidation/src/main/resources/templates/result.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../BaiTap/ValidateLoginForm/.idea/ValidateLoginForm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../96_Demo/DemoDataBiding/A07Demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module3/98_CorelNoteANDBaoCaoTuan/ThuVien/tomcat/webapps/ROOT/WEB-INF/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module3/98_CorelNoteANDBaoCaoTuan/ThuVien/tomcat/webapps/ROOT/WEB-INF/classes/controller/TimeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module3/98_CorelNoteANDBaoCaoTuan/ThuVien/tomcat/webapps/ROOT/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module3/98_CorelNoteANDBaoCaoTuan/ThuVien/tomcat/webapps/ROOT/WEB-INF/views/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module3/98_CorelNoteANDBaoCaoTuan/ThuVien/tomcat/webapps/ROOT/WEB-INF/views/saveCondiment.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module3/98_CorelNoteANDBaoCaoTuan/ThuVien/tomcat/webapps/ROOT/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module3_CaseStudy/.idea/artifacts/module3_CaseStudy_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3_CaseStudy/.idea/artifacts/module3_CaseStudy_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module3_CaseStudy/module3_CaseStudy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3_CaseStudy/module3_CaseStudy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../2SpringController/BaiTap/HienThiGiaViVoiSandWich/src/main/webapp/WEB-INF/views/saveCondiment.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4DataBinding&amp;Form/ThucHanh/LoginApps/.idea/LoginApps.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4DataBinding&amp;Form/ThucHanh/LoginApps/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4DataBinding&amp;Form/ThucHanh/LoginApps/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4DataBinding&amp;Form/ThucHanh/LoginApps/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4DataBinding&amp;Form/ThucHanh/LoginApps/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4DataBinding&amp;Form/ThucHanh/LoginApps/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4_CaseStudy/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4_CaseStudy/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4_CaseStudy/src/main/java/com/casestudy/customermanager/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4_CaseStudy/src/main/java/com/casestudy/customermanager/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4_CaseStudy/src/main/java/com/casestudy/customermanager/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4_CaseStudy/src/main/java/com/casestudy/customermanager/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4_CaseStudy/src/main/java/com/casestudy/customermanager/model/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4_CaseStudy/src/main/java/com/casestudy/customermanager/model/customer/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4_CaseStudy/src/main/java/com/casestudy/customermanager/model/customer/CustomerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4_CaseStudy/src/main/java/com/casestudy/customermanager/model/customer/CustomerType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4_CaseStudy/src/main/java/com/casestudy/customermanager/repositories/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4_CaseStudy/src/main/java/com/casestudy/customermanager/repositories/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4_CaseStudy/src/main/java/com/casestudy/customermanager/services/customerService/impl/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4_CaseStudy/src/main/java/com/casestudy/customermanager/services/customerService/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4_CaseStudy/src/main/java/com/casestudy/customermanager/services/customerService/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4_CaseStudy/src/main/java/com/casestudy/customermanager/services/customerService/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4_CaseStudy/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4_CaseStudy/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4_CaseStudy/src/main/resources/templates/html/customer.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4_CaseStudy/src/main/resources/templates/html/customer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4_CaseStudy/src/main/resources/templates/html/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4_CaseStudy/src/main/resources/templates/html/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../validatePhoneNumber" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../validateForm1" />
   </component>
   <component name="RunManager">
     <configuration name="ValidatephoneApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -74,17 +60,18 @@
       <workItem from="1616719226316" duration="9000" />
       <workItem from="1617629320502" duration="11000" />
       <workItem from="1617969381501" duration="44000" />
+      <workItem from="1619405699629" duration="11000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="158" key="FileChooserDialogImpl" timestamp="1617629329955">
+    <state x="549" y="158" key="FileChooserDialogImpl" timestamp="1619405709650">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="158" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1617629329955" />
+    <state x="549" y="158" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1619405709650" />
     <state x="209" y="78" key="new project wizard" timestamp="1616417826827">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
