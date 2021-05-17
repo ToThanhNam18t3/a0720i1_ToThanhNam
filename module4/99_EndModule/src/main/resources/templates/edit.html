@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<body>
+
+<form th:action="@{/promotion/edit}" method="post" th:object="${promotion}">
+    <div class="form-group">
+        <label for="promotionId">Promotion Id</label>
+        <input th:field="*{promotionId}" type="text" class="form-control" id="promotionId" aria-describedby="emailHelp" placeholder="Enter Id" readonly>
+    </div>
+    <div class="form-group">
+        <label for="title">Promotion Title</label>
+        <input th:field="*{promotionTitle}" type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Enter Title">
+    </div>
+    <div class="form-group">
+        <label for="starday">Start Day</label>
+        <input th:field="*{startDay}" type="date" class="form-control" id="starday" aria-describedby="emailHelp" placeholder="Enter StarDay">
+    </div>
+    <div class="form-group">
+        <label for="endDay">End Day</label>
+        <input th:field="*{endDay}" type="date" class="form-control" id="endDay" aria-describedby="emailHelp" placeholder="Enter EndDay">
+    </div>
+    <div class="form-group">
+        <label for="discountRate">Discount Rate</label>
+        <input th:field="*{discountRate}" type="number" class="form-control" id="discountRate" aria-describedby="emailHelp" placeholder="Enter discount Rate">
+    </div>
+    <div class="form-group">
+        <label for="detail">Detail</label>
+        <input th:field="*{detail}" type="text" class="form-control" id="detail" aria-describedby="emailHelp" placeholder="Enter Detail">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

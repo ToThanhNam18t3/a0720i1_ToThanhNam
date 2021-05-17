@@ -9,7 +9,7 @@ import java.sql.SQLException;
 public class DBConnection {
     private static String jdbcURL = "jdbc:mysql://localhost:3308/casestudy?useSSL=false&allowPublicKeyRetrieval=true";
     private static String jdbcUsername = "thanhnam";
-    private static String jdbcPassword = "123456";
+    private static String jdbcPassword = "ToThanhNam123@#!";
     public static Connection getConnection() {
         Connection connection = null;
         try {

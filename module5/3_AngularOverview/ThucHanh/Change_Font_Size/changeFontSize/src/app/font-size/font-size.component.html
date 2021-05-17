@@ -1,0 +1,22 @@
+<!--<h3>List Student</h3>-->
+
+<!--<p>ID sinh viên : {{student.id}}</p>-->
+<!--<p>Tên sinh viên : {{student.name}}</p>-->
+<!--<p>Điểm sinh viên : {{student.mark}}</p>-->
+<!--<p>Ảnh Sinh Viên : </p> <img [src]="student.image" alt="">-->
+
+<!--<label>Chấm điểm</label>-->
+<!--&lt;!&ndash;<input type="number" (change)="getMark($event.target.value)">&ndash;&gt;-->
+<!--<input type="number" [(ngModel)]="student.mark">-->
+
+
+<h2>Font size editor</h2>
+
+<div>
+  <label>Enter font size (px):</label>
+  <input type="number" [value]="fontSize" (change)="onChange($event.target.value)">
+</div>
+
+<p class="output" [style.fontSize.px]="fontSize">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cumque nostrum quibusdam. Inventore quibusdam debitis, tempore error voluptatem explicabo ipsum?
+</p>

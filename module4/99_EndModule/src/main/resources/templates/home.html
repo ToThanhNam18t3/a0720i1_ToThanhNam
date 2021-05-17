@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<style>
+    .page__custom{
+        display: flex;
+        padding-left: 0;
+        list-style: none;
+        justify-content: center;
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+        $('.close').on('click', function () {
+            $('.modal').hide();
+        });
+    })
+
+    function showModalDelete(url) {
+        $('#deleteCustomer').attr("href", url);
+        $('.modal').show();
+    }
+
+    function closeModal() {
+        $('.modal').hide();
+    }
+</script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Danh Sách Khuyến Mãi</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" th:href="@{/promotion/create}">Create <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" th:action="@{/promotion}" method="get">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="keyword" th:value="${keyword}">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Search">Search</button>
+            <input type="button" value="Search" onclick="clearSearch()">
+        </form>
+    </div>
+</nav>
+
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th scope="col">Promotion Id</th>
+        <th scope="col">Promotion Title</th>
+        <th scope="col">StartDay</th>
+        <th scope="col">EndDay</th>
+        <th scope="col">Discount Rate</th>
+        <th scope="col">Detail</th>
+        <th scope="col" colspan="2">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <tr th:each="promotion:${promotions}">
+        <td th:text="${promotion.getPromotionId()}"></td>
+        <td th:text="${promotion.getPromotionTitle()}"></td>
+        <td th:text="${promotion.getStartDay()}"></td>
+        <td th:text="${promotion.getEndDay()}"></td>
+        <td th:text="${promotion.getDiscountRate()}"></td>
+        <td th:text="${promotion.getDetail()}"></td>
+        <td><a class="btn btn-primary" th:href="@{promotion/edit/{id}(id=${promotion.getPromotionId()})}">Edit</a></td>
+<!--        <td><a class="btn btn-primary" th:href="@{promotion/delete/__${promotion.getPromotionId()}__}">Delete</a></td>-->
+        <td><a class="btn btn-primary" th:href="@{promotion/delete/{id}(id=${promotion.getPromotionId()})}">Delete</a></td>
+<!--        <td>-->
+<!--            <%&#45;&#45;<c:set var="url" value="${pageContext.request.contextPath}/customer?action=delete&ID=${customer.customerId}" />&#45;&#45;%>-->
+<!--            <a class="btn btn-danger delete" data-toggle="modal" onclick="showModalDelete('${pageContext.request.contextPath}/customer?action=delete&ID=${customer.customerId}')">Delete</a>-->
+<!--        </td>-->
+    </tr>
+    </tbody>
+                            <!-- MODAL DELETE !-->
+
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirm delete Promotion</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Do you want to delete this Promotion ?</p>
+                </div>
+                <div class="modal-footer" id="button-modal">
+                    <a type="button" class="btn btn-primary" id="deletePromotion">Delete</a>
+                    <a type="button" class="btn btn-secondary close" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</table>
+
+<!-- Pageable !-->
+<!--<div>-->
+
+<!--    <a th:href="@{'/promotion'(page=${promotions.number -1 })}" th:if="${promotions.hasPrevious()}">Previous</a>-->
+<!--    <a th:href="@{'/promotion'(page=${promotions.number + 1 })}" th:if="${promotions.hasNext()}">Next</a>-->
+<!--</div>-->
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination page__custom">
+        <li class="page-item"><a class="page-link" th:href="@{'/promotion'(page=${promotions.number - 1})}" th:if="${promotions.hasPrevious()}">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" th:href="@{'/promotion'(page=${promotions.number + 1})}" th:if="${promotions.hasNext()}">Next</a></li>
+    </ul>
+</nav>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

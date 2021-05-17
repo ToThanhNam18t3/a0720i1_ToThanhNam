@@ -2,8 +2,8 @@ package com.casestudy.customermanager.services.customerService.impl;
 
 import com.casestudy.customermanager.model.customer.Customer;
 import com.casestudy.customermanager.model.customer.CustomerType;
-import com.casestudy.customermanager.repositories.CustomerRepository;
-import com.casestudy.customermanager.repositories.CustomerTypeRepository;
+import com.casestudy.customermanager.repositories.customerRepositories.CustomerRepository;
+import com.casestudy.customermanager.repositories.customerRepositories.CustomerTypeRepository;
 import com.casestudy.customermanager.services.customerService.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -17,6 +17,7 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Autowired
     CustomerRepository customerRepository;
+
     @Autowired
     CustomerTypeRepository customerTypeRepository;
 
@@ -38,7 +39,12 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public Customer findById(int id) {
-        return customerRepository.findById(id).orElse(null);
+        return null;
+    }
+
+    @Override
+    public Customer findByCustomerId(String id) {
+        return customerRepository.findByCustomerId(id);
     }
 
     @Override

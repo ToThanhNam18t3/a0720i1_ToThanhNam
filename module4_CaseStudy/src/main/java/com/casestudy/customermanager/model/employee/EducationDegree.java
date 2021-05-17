@@ -7,6 +7,9 @@ import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -17,9 +20,10 @@ public class EducationDegree {
     @Id
     private String educationDgreeId;
 
-    private String educationDegreeName;
+    @OneToMany
+    private Set<Employee> educationDegreeName;
 
-    public EducationDegree(String educationDgreeId, String educationDegreeName) {
+    public EducationDegree(String educationDgreeId, Set<Employee> educationDegreeName) {
         this.educationDgreeId = educationDgreeId;
         this.educationDegreeName = educationDegreeName;
     }

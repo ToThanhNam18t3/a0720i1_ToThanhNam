@@ -65,9 +65,10 @@
             <td th:text="${customer.getCustomerEmail()}"></td>
             <td th:text="${customer.getCustomerAddress()}"></td>
             <td th:text="${customer.customerType.getCustomerTypeName()}"></td>
-            <td><a class="btn btn-primary" th:href="@{/customer/edit/__${customer.getCustomerId()}__}">Edit</a></td>
+            <td><a class="btn btn-primary" th:href="@{customer/edit/{id}(id=${customer.getCustomerId()})}">Edit</a></td>
             <td><a class="btn btn-primary" th:href="@{customer/delete/__${customer.getCustomerId()}__}">Delete</a></td>
         </tr>
+<!--        th:href="@{/customer/edit/__${customer.getCustomerId()}__}-->
     </tbody>
 </table>
 
@@ -83,6 +84,6 @@
 </nav>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </html>

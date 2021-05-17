@@ -1,16 +1,20 @@
 package com.casestudy.customermanager.model.employee;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
+@Data
 public class Employee {
 
     @Id
@@ -21,12 +25,16 @@ public class Employee {
     private String employeeIdCard;
     private String employeeNumberPhone;
     private String employeeEmail;
-    private String employeeEducationDegreeId;
-    private String employeePositionId;
+
+    @ManyToOne
+    private EducationDegree employeeEducationDegreeId;
+
+    @ManyToOne
+    private EmployeePosition employeePositionId;
     private long employeeSalary;
 
 
-    public Employee(String employeeId, String employeeName, String employeeDob, String employeeIdCard, String employeeNumberPhone, String employeeEmail, String employeeEducationDegreeId, String employeePositionId, long employeeSalary) {
+    public Employee(String employeeId, String employeeName, String employeeDob, String employeeIdCard, String employeeNumberPhone, String employeeEmail, EducationDegree employeeEducationDegreeId, EmployeePosition employeePositionId, long employeeSalary) {
         this.employeeId = employeeId;
         this.employeeName = employeeName;
         this.employeeDob = employeeDob;

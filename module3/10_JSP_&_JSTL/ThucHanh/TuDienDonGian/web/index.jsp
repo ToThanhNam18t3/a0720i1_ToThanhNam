@@ -22,21 +22,21 @@
   <h2>Result: ${result}</h2>
   <h1> <c:out value="${word}"/> </h1>
 
-  <c:set var="num" value="20"/>
-  <p>Number : <c:out value="${num}"/></p>
-  
-  <c:if test="${num % 2 == 0}">
-    <p>Even</p>
-  </c:if>
-  <c:if test="${num % 2 != 0}">
-    <p>Even</p>
-  </c:if>
+<%--  <c:set var="num" value="20"/>--%>
+<%--  <p>Number : <c:out value="${num}"/></p>--%>
+<%--  --%>
+<%--  <c:if test="${num % 2 == 0}">--%>
+<%--    <p>Even</p>--%>
+<%--  </c:if>--%>
+<%--  <c:if test="${num % 2 != 0}">--%>
+<%--    <p>Even</p>--%>
+<%--  </c:if>--%>
 
-  <c:set var="list" value="PHP;JAVA;C++"/>
-  <br>
-  <c:forTokens var="it" items="${list}" delims=";">
-    <p>${it}-</p>
-  </c:forTokens>
+<%--  <c:set var="list" value="PHP;JAVA;C++"/>--%>
+<%--  <br>--%>
+<%--  <c:forTokens var="it" items="${list}" delims=";">--%>
+<%--    <p>${it}-</p>--%>
+<%--  </c:forTokens>--%>
 
   </body>
 </html>

@@ -25,14 +25,6 @@ public class CustomerController {
     @Autowired
     CustomerService customerService;
 
-//    @RequestMapping("/page/{pagenum}")
-//    public String viewPage(Model model ,
-//                           @PathVariable(name="pagenum") int pagenum){
-//        Page<Customer> page = customerService.findAll(pagenum);
-//
-//
-//    }
-
     @GetMapping("")
     public String searchCustomerByName(@RequestParam(value = "page" , defaultValue = "0") int page,
                                     @RequestParam(value = "inputSearch" , defaultValue = "") String inputSearch ,
@@ -45,7 +37,7 @@ public class CustomerController {
         if (nameSort.equals("")){
             sortByName = PageRequest.of(page, 5);
         } else {
-            sortByName = PageRequest.of(page, 5 , Sort.by(nameSort).ascending());
+            sortByName = PageRequest.of(page, 1 , Sort.by(nameSort).ascending());
         }
 
         model.addAttribute("inputSearch" , inputSearch);
@@ -73,22 +65,16 @@ public class CustomerController {
         return "redirect:/customer/";
     }
 
-//    @PostMapping("/create")
-//    public String createCustomer(@Valid @ModelAttribute("customer") Customer customer){
-//        customerService.save(customer);
-//        return "redirect:/";
-//    }
-
     @GetMapping("/edit/{id}")
-    public ModelAndView showFormEdit(@PathVariable int id , Model model){
+    public ModelAndView showFormEdit(@PathVariable String id , Model model){
         model.addAttribute("customertypes", customerService.findAllCustomerType());
-        return new ModelAndView("html/edit", "customer" , customerService.findById(id));
+        return new ModelAndView("html/edit", "customer" , customerService.findByCustomerId(id));
     }
 
     @PostMapping("/edit")
     public String editCustomer(@ModelAttribute("customer") Customer customer){
         customerService.save(customer);
-        return "redirect:";
+        return "redirect:/customer/";
     }
 
     @GetMapping("/delete/{id}")
@@ -96,6 +82,8 @@ public class CustomerController {
         customerService.delete(id);
         return "redirect:/customer/";
     }
+
+
 
 
 }
