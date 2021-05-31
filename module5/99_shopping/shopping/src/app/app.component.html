@@ -13,9 +13,9 @@
 
 <body>
   <main>
-    <app-cart-header [numberItems] = "10"></app-cart-header>
+    <app-cart-header [numberItems] = "numberItems"></app-cart-header>
    
-    <app-product-list [products] ="products"></app-product-list>
+    <app-product-list [products] ="products" (onRemoveProduct) = "removeProduct($event)"></app-product-list>
 
     <app-cart-summary></app-cart-summary>
 

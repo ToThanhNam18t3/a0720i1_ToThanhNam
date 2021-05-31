@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ProductList } from './ProductList';
 
 @Component({
@@ -9,6 +9,7 @@ import { ProductList } from './ProductList';
 export class ProductListComponent implements OnInit {
 
   @Input() products;
+  @Output() onRemoveProduct = new EventEmitter();
 
   // products : ProductList[] = [
   //   {productId: "1", name: "Samsung ZFold 2" , description: " Một chiếc điện thoại cao cấp tới từ thương hiệu Samsung" , thumbnail: "/assets/zfold2.jpg" , price : 5.99 , quantity : 1} , 
@@ -24,9 +25,9 @@ export class ProductListComponent implements OnInit {
   }
 
   removeProduct(productId: string):void{
-    alert("Bạn muốn xóa " + productId + "ra khỏi giỏ hàng ?")
-    const index = this.products.findIndex(product => product.productId === productId);
-    this.products.splice(index , 1)
+    this.onRemoveProduct.emit(productId);
+    // const index = this.products.findIndex(product => product.productId === productId);
+    // this.products.splice(index , 1)
   }
 
   updateQuantity(element , productId){

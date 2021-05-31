@@ -1,0 +1,33 @@
+<div>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Dob</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Cmnd</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Email</th>
+        <th scope="col">Type</th>
+        <th scope="col">Address</th>
+        <th scope="col" colspan="2">Action</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let customer of customers">
+      <tr>
+        <th scope="row">{{customer.customerId}}</th>
+        <td>{{customer.customerName}}</td>
+        <td>{{customer.customerDob}}</td>
+        <td>{{customer.customerGender}}</td>
+        <td>{{customer.customerCmnd}}</td>
+        <td>{{customer.customerNumberPhone}}</td>
+        <td>{{customer.customerEmail}}</td>
+        <td>{{customer.customerType}}</td>
+        <td>{{customer.customerAddress}}</td>
+        <button type="button" class="btn btn-info">Edit</button>
+        <button type="button" class="btn btn-danger" (onClick) = "deleteCustomer()">Delete</button>
+      </tr>
+    </tbody>
+  </table>
+</div>

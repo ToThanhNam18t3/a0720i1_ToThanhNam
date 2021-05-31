@@ -3,6 +3,6 @@ export class ProductList {
    name : String ;
    description : String ; 
    thumbnail : String ;
-   price : Number ;
-   quantity : Number
+   price : number ;
+   quantity : number
 }

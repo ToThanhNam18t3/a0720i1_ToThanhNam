@@ -1,0 +1,23 @@
+<div *ngIf="isShowForm">
+<input type="text" placeholder="VietNamese" [(ngModel)] = "newVn"><br><br>
+<input type="text" placeholder="Eng" [(ngModel)] = "newEng">
+<br><br>
+<button (click)="addWord()">Thêm mới</button>
+</div>
+<button (click)="isShowForm = true" *ngIf="!isShowForm">Thêm mới</button> <br><br><br>
+
+<select class="custom-select" id="inputGroupSelect01" [(ngModel)] = "filterStatus">
+    <option selected>Choose...</option>
+    <option value="xem_tat_ca">Xem tất cả</option>
+    <option value="xem_da_nho">Từ đã nhớ</option>
+    <option value="xem_chua_nho">Từ chưa nhớ</option>
+  </select>
+
+<div *ngFor="let word of arrWords">
+    <div class="word" *ngIf="filterStatus === 'xem_tat_ca' || (filterStatus === 'xem_da_nho' && word.memorized) 
+    || (filterStatus === 'xem_chua_nho' && !word.memorized)">
+        <h4 [ngStyle] = "{color: word.memorized?'green':'red'}">{{word.en}}</h4>
+        <h4>{{word.vn}}</h4>
+        <button (click)="deleteWord(word.id)">delete</button>
+    </div>
+</div>
