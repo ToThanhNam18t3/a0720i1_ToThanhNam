@@ -5,9 +5,10 @@ import { FormsModule , ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { CustomerListComponent } from './customer-list/customer-list.component';
-import { CustomerCreateComponent } from './customer-create/customer-create.component';
+import { CustomerListComponent } from './customer/customer-list/customer-list.component';
+import { CustomerCreateComponent } from './customer/customer-create/customer-create.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { CustomerEditComponent } from './customer/customer-edit/customer-edit.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { HomePageComponent } from './home-page/home-page.component';
     CustomerListComponent,
     CustomerCreateComponent,
     HomePageComponent,
+    CustomerEditComponent,
   ],
   imports: [
     BrowserModule,

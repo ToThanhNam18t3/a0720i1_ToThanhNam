@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Edit Customer</div>
+        <div class="content">
+          <form (submit) = "editCustomer()" [formGroup] = "formEdit">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Your Id</span>
+                <input formControlName="customerId" type="text" placeholder="Enter your ID" required>
+                <p style="color: red;" *ngIf="formEdit.get('customerId').invalid && formEdit.get('customerId').touched">required</p> 
+              </div>
+              <div class="input-box">
+                <span class="details">Your Name</span>
+                <input formControlName="customerName" type="text" placeholder="Enter your name" required >
+                <p style="color: red;" *ngIf="formEdit.get('customerName').invalid && formEdit.get('customerName').touched">required</p> 
+              </div>
+              <div class="input-box">
+                <span class="details">Your Dob</span>
+                <input formControlName="customerDob" type="date" placeholder="Enter your Dob" required>
+                <p style="color: red;" *ngIf="formEdit.get('customerDob').invalid && formEdit.get('customerDob').touched">required</p> 
+              </div>
+              <!-- <div class="input-box">
+                <span class="details">Gender</span>
+                <input formControlName="customerGender" type="text" placeholder="Confirm your password" required>
+              </div> -->
+              <div class="input-box">
+                <span class="details">CMND</span>
+                <input formControlName="customerCmnd" type="text" placeholder="Enter your username" required>
+                <p style="color: red;" *ngIf="formEdit.get('customerCmnd').invalid && formEdit.get('customerCmnd').touched">required</p> 
+              </div>
+              <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input formControlName="customerNumberPhone" type="text" placeholder="Enter your number" required>
+                <p style="color: red;" *ngIf="formEdit.get('customerNumberPhone').invalid && formEdit.get('customerNumberPhone').touched">required</p> 
+              </div>
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input formControlName="customerEmail" type="text" placeholder="Enter your email" required>
+                <p style="color: red;" *ngIf="formEdit.get('customerEmail').invalid && formEdit.get('customerEmail').touched">required</p> 
+              </div>
+              <div class="input-box">
+                <span class="details">Type</span>
+                <input formControlName="customerType" type="text" placeholder="Confirm your password" required>
+                <p style="color: red;" *ngIf="formEdit.get('customerType').invalid && formEdit.get('customerType').touched">required</p> 
+              </div>
+              <div class="input-box">
+                <span class="details">Address</span>
+                <input formControlName="customerAddress" type="text" placeholder="Enter your Address" required>
+                <p style="color: red;" *ngIf="formEdit.get('customerAddress').invalid && formEdit.get('customerAddress').touched">required</p> 
+              </div>
+            </div>
+            <div class="gender-details" [formGroup]="formEdit">
+              <input type="radio" name="customerGender" id="dot-1" value="male" formControlName="customerGender">
+              <input type="radio" name="customerGender" id="dot-2" value="female" formControlName="customerGender">
+              <input type="radio" name="customerGender" id="dot-3" value="Not-mention" formControlName="customerGender">
+              <span class="gender-title">Gender</span>
+              <div class="category">
+                <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+              </label>
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Prefer not to say</span>
+                </label>
+              </div>
+            </div>
+            <!-- <div>
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">Male</label><br>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Female</label><br>
+              <input type="radio" id="other" name="gender" value="other">
+              <label for="other">Other</label>  
+            </div> -->
+            <div class="button">
+              <input type="submit" value="Edit - Customer">
+            </div>
+          </form>
+        </div>
+      </div>
+</body>
+</html>

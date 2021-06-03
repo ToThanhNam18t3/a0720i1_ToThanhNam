@@ -1,0 +1,140 @@
+<a routerLink="/create-customer"></a>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <form > -->
+    <div class="container">
+      <div class="title">Registration</div>
+      <div class="content">
+        <form (submit) = "createCustomer()" [formGroup] = "formCreate">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Your Id</span>
+              <input formControlName="customerId" type="text" placeholder="Enter your ID" required>
+              <ng-container *ngFor="let validation of validationMessage.customerId">
+                <small class="form-text text-danger"
+                       *ngIf="formCreate.get('customerId').hasError(validation.type)&&(formCreate.get('customerId').dirty || formCreate.get('customerId').touched)">
+                  {{validation.message}}
+                </small>
+              </ng-container>
+            </div>
+            <div class="input-box">
+              <span class="details">Your Name</span>
+              <input formControlName="customerName" type="text" placeholder="Enter your name" required >
+              <ng-container *ngFor="let validation of validationMessage.customerName">
+                <small class="form-text text-danger"
+                       *ngIf="formCreate.get('customerName').hasError(validation.type)&&(formCreate.get('customerName').dirty || formCreate.get('customerName').touched)">
+                  {{validation.message}}
+                </small>
+              </ng-container>
+            </div>
+            <div class="input-box">
+              <span class="details">Your Dob</span>
+              <input formControlName="customerDob" type="date" placeholder="Enter your Dob" required>
+              <ng-container *ngFor="let validation of validationMessage.customerDob">
+                <small class="form-text text-danger"
+                       *ngIf="formCreate.get('customerDob').hasError(validation.type)&&(formCreate.get('customerDob').dirty || formCreate.get('customerDob').touched)">
+                  {{validation.message}}
+                </small>
+              </ng-container>
+            </div>
+            <!-- <div class="input-box">
+              <span class="details">Gender</span>
+              <input formControlName="customerGender" type="text" placeholder="Confirm your password" required>
+            </div> -->
+            <div class="input-box">
+              <span class="details">CMND</span>
+              <input formControlName="customerCmnd" type="text" placeholder="Enter your username" required>
+              <ng-container *ngFor="let validation of validationMessage.customerCmnd">
+                <small class="form-text text-danger"
+                       *ngIf="formCreate.get('customerCmnd').hasError(validation.type)&&(formCreate.get('customerCmnd').dirty || formCreate.get('customerCmnd').touched)">
+                  {{validation.message}}
+                </small>
+              </ng-container>
+            </div>
+            <div class="input-box">
+              <span class="details">Phone Number</span>
+              <input formControlName="customerNumberPhone" type="text" placeholder="Enter your number" required>
+              <ng-container *ngFor="let validation of validationMessage.customerNumberPhone">
+                <small class="form-text text-danger"
+                       *ngIf="formCreate.get('customerNumberPhone').hasError(validation.type)&&(formCreate.get('customerNumberPhone').dirty || formCreate.get('customerNumberPhone').touched)">
+                  {{validation.message}}
+                </small>
+              </ng-container>
+            </div>
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input formControlName="customerEmail" type="text" placeholder="Enter your email" required>
+              <ng-container *ngFor="let validation of validationMessage.customerEmail">
+                <small class="form-text text-danger"
+                       *ngIf="formCreate.get('customerEmail').hasError(validation.type)&&(formCreate.get('customerEmail').dirty || formCreate.get('customerEmail').touched)">
+                  {{validation.message}}
+                </small>
+              </ng-container> 
+            </div>
+            <div class="input-box">
+              <span class="details">Type</span>
+              <input formControlName="customerType" type="text" placeholder="Confirm your password" required>
+              <ng-container *ngFor="let validation of validationMessage.customerType">
+                <small class="form-text text-danger"
+                       *ngIf="formCreate.get('customerType').hasError(validation.type)&&(formCreate.get('customerType').dirty || formCreate.get('customerType').touched)">
+                  {{validation.message}}
+                </small>
+              </ng-container> 
+            </div>
+            <div class="input-box">
+              <span class="details">Address</span>
+              <input formControlName="customerAddress" type="text" placeholder="Enter your Address" required>
+              <ng-container *ngFor="let validation of validationMessage.customerAddress">
+                <small class="form-text text-danger"
+                       *ngIf="formCreate.get('customerAddress').hasError(validation.type)&&(formCreate.get('customerAddress').dirty || formCreate.get('customerAddress').touched)">
+                  {{validation.message}}
+                </small>
+              </ng-container> 
+            </div>
+          </div>
+          <div class="gender-details" [formGroup]="formCreate">
+            <input type="radio" name="customerGender" id="dot-1" value="male" formControlName="customerGender">
+            <input type="radio" name="customerGender" id="dot-2" value="female" formControlName="customerGender">
+            <input type="radio" name="customerGender" id="dot-3" value="Not-mention" formControlName="customerGender">
+            <span class="gender-title">Gender</span>
+            <div class="category">
+              <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Male</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Female</span>
+            </label>
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="gender">Prefer not to say</span>
+              </label>
+            </div>
+          </div>
+          <!-- <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>  
+          </div> -->
+          <div class="button">
+            <input type="submit" value="Register" [disabled] = "formCreate.invalid" >
+          </div>
+        </form>
+      </div>
+    </div>
+  <!-- </form> -->
+
+</body>
+</html>

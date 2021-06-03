@@ -11,11 +11,11 @@ body{
   justify-content: center;
   align-items: center;
   padding: 10px;
-  /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
 .container{
   max-width: 700px;
-  width: 70%;
+  width: 100%;
   background-color: #fff;
   padding: 25px 30px;
   border-radius: 5px;
@@ -65,6 +65,10 @@ form .input-box span.details{
 .user-details .input-box input:focus,
 .user-details .input-box input:valid{
   border-color: #9b59b6;
+}
+
+.user-details .input-box input.ng-invalid.ng-touched{
+  border-color: red;
 }
  form .gender-details .gender-title{
   font-size: 20px;
